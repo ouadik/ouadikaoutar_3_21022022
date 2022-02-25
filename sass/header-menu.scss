@@ -71,6 +71,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         transition: padding-right 450ms ease-in-out;
+        animation: rentree 2s;
         @media (min-width: 1025px) {
             width: 400px;
             margin: 10px 5px 10px 5px;
@@ -90,17 +91,41 @@
         }
         .texte-plat p {
             margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            flex: 1;
         }
+    }
+    
+    .rentree-1 {
+        animation-delay: 50ms;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+    .rentree-2 {
+        animation-delay: 150ms;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+    .rentree-3 {
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+    .rentree-4 {
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     
     .texte-plat {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    
-    .menu-section {
-        animation: rentree 3s ease-in-out;
     }
     
     .plat-confirmation {

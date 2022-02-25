@@ -45,18 +45,13 @@
     
     @keyframes rentree {
         0% {
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
             opacity: 0;
         }
-        25% {
-            opacity: 0.25;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        75% {
-            opacity: 0.75;
-        }
         100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
             opacity: 1;
         }
     }

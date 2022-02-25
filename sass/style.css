@@ -98,18 +98,13 @@
 }
 @keyframes rentree {
   0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
   }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -196,6 +191,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  animation: rentree 2s;
 }
 @media (min-width: 1025px) {
   .plat {
@@ -218,16 +214,40 @@
 }
 .plat .texte-plat p {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.rentree-1 {
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.rentree-2 {
+  animation-delay: 150ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.rentree-3 {
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.rentree-4 {
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .texte-plat {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.menu-section {
-  animation: rentree 3s ease-in-out;
 }
 
 .plat-confirmation {
